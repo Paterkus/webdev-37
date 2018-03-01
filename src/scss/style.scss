@@ -1,0 +1,172 @@
+@import 'vendor/normalize';
+
+// Colors
+$red: #bc2e3a;
+$bg_light: #f5f5f5;
+$dark_gray: #494949;
+$gray: #6f6f6e;
+$light_gray: #6a6a6a;
+$shape: #171717;
+
+// Fonts
+$header_font: 'Lato', sans-serif;
+$text_font: 'Open Sans', sans-serif;
+
+// Others
+$shadow: 3px 3px 10px 3px rgba(0,0,0,0.3);
+
+*, *::after, *::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  font-family: $text_font;
+  font-size: 17px;
+}
+
+h2 {
+  color: $dark_gray;
+}
+
+h3 {
+  color: $gray;
+}
+
+p {
+  color: $light_gray;
+  line-height: 30px;
+}
+
+img {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.container {
+  max-width: 1193px;
+  margin: 0 auto;
+}
+
+.btn {
+  background: $red;
+  color: #fff;
+  font-family: $header_font;
+  padding: 15px 32px;
+  border-radius: 50px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.page-header {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  &__nav, &__nav-main, &__side-nav {
+    display: flex; 
+  }
+
+  &__nav-main, &__side-nav {
+    display: none;
+  }
+
+  &__nav {
+    align-items: center;
+  }
+
+  &__nav-item {
+    padding: 10px;
+    text-transform: uppercase;
+  }
+
+  &__logo {
+    margin-left: 15px;
+  }
+
+  &__nav-icon {
+    width: 40px;
+    height: 45px;
+    position: relative;
+    z-index: 100;
+    transform: rotate(0deg);
+    transition: .5s ease-in-out;
+    top: 5px;
+    right: 15px;
+
+    span {
+      display: block;
+      position: absolute;
+      height: 5px;
+      width: 100%;
+      background: #fff;
+      border-radius: 9px;
+      opacity: 1;
+      left: 0;
+      transform: rotate(0deg);
+      transition: .25s ease-in-out;
+
+      &:nth-child(1) {
+        top: 0px;
+      }
+
+      &:nth-child(2),
+      &:nth-child(3) {
+        top: 12px;
+      }
+
+      &:nth-child(4) {
+        top: 24px;
+      }
+    } 
+  }
+  &__nav-icon.open span:nth-child(1) {
+    top: 18px;
+    width: 0%;
+    left: 50%
+  }
+
+  &__nav-icon.open span:nth-child(2) {
+    transform: rotate(45deg)
+  }
+
+  &__nav-icon.open span:nth-child(3) {
+    transform: rotate(-45deg)
+  }
+
+  &__nav-icon.open span:nth-child(4) {
+    top: 18px;
+    width: 0%;
+    left: 50%
+  }
+}
+
+.banner {
+  background: url('../img/header.jpg') no-repeat;
+  background-size: cover;
+  background-position: 23%;
+  height: 70vh;
+  width: 100%;
+
+  &__img {
+    display: none;
+  }
+
+  &__btn {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
