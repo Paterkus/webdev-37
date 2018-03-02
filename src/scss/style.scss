@@ -26,8 +26,16 @@ html, body {
   font-size: 17px;
 }
 
+h1 {
+  font-family: $header_font;
+  font-weight: 900;
+  font-size: 2.5rem;
+}
+
 h2 {
   color: $dark_gray;
+  font-size: 2.5rem;
+  text-align: center;
 }
 
 h3 {
@@ -41,6 +49,7 @@ p {
 
 img {
   max-width: 100%;
+  height: auto;
   overflow: hidden;
 }
 
@@ -66,6 +75,8 @@ a {
   border-radius: 50px;
   font-weight: bold;
   text-transform: uppercase;
+  box-shadow: $shadow;
+  display: inline-block;
 }
 
 .page-header {
@@ -102,7 +113,7 @@ a {
     z-index: 100;
     transform: rotate(0deg);
     transition: .5s ease-in-out;
-    top: 5px;
+    top: 10px;
     right: 15px;
 
     span {
@@ -168,5 +179,213 @@ a {
     top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
+    background: #fff;
+    color: #000;
+  }
+}
+
+.about {
+  text-align: center;
+
+  &__title {
+    padding: 30px 0;
+  }
+
+  &__text {
+    padding: 0 20px;
+    margin-bottom: 40px;
+  }
+
+  &__btn {
+    margin-bottom: 50px;
+  }
+
+  &__img {
+    display: none;
+  }
+
+  &__shape {
+    z-index: 2;
+  }
+}
+
+.services {
+  background: $bg_light;
+  &__title {
+    padding: 40px 0;
+  }
+
+  &__item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__subtitle {
+    margin-left: 10px;
+  }
+
+  &__icon {
+    background: $red;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__text {
+    padding: 40px 20px;
+  }
+}
+
+.process {
+  &__title {
+    padding: 40px 0;
+  }
+
+  &__content {
+    text-align: center;
+  }
+
+  &__text {
+    padding: 0 20px;
+  }
+
+  &__btn {
+    margin: 40px 0;
+  }
+
+  &__cards {
+    overflow: hidden;
+  }
+
+  &__card {
+    margin-bottom: 40px;
+  }
+
+  &__number, &__subtitle, &__details {
+    color: #fff;
+  }
+
+  &__number {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  &__subtitle {
+    text-transform: uppercase;
+  }
+}
+
+.team {
+  background: $bg_light;
+
+  &__title {
+    padding: 40px 0;
+  }
+
+  &__img {
+    background-color: #fff;
+    transform: rotate(45deg);
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    border: 15px solid #fff;
+    box-shadow: $shadow;
+
+    &--one::before {
+      background: url('../img/team-1.jpg') no-repeat;
+    }
+
+    &--two::before {
+      background: url('../img/team-2.jpg') no-repeat;
+    }
+
+    &--three::before {
+      background: url('../img/team-3.jpg') no-repeat;
+    }
+
+    &--four::before {
+      background: url('../img/team-4.jpg') no-repeat;
+    }
+
+    &::before {
+      content: '';
+      background-size: cover;
+      background-position: center;
+      transform: rotate(-45deg);
+      width: 150%;
+      height: 150%;
+      position: absolute;
+      top: -20%;
+      left: -23%;
+    }
+  }
+}
+
+.clients {
+  &__title {
+    padding: 40px 0;
+  }
+
+  &__img {
+    background-color: #fff;
+    transform: rotate(45deg);
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    border: 15px solid #fff;
+    box-shadow: $shadow;
+
+    &::before {
+      content: '';
+      background: url('../img/team-2.jpg') no-repeat;
+      background-size: cover;
+      background-position: center;
+      transform: rotate(-45deg);
+      width: 150%;
+      height: 150%;
+      position: absolute;
+      top: -20%;
+      left: -23%;
+    }
+  }
+
+  &__thumbnail {
+    height: 60px;
+    width: 60px;
+    transform: rotate(45deg);
+    overflow: hidden;
+
+    &:nth-child(1)::before {
+      background: url('../img/team-2.jpg') no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+
+    &:nth-child(2)::before {
+      background: url('../img/team-3.jpg') no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+
+    &:nth-child(3)::before {
+      background: url('../img/team-4.jpg') no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+
+    &::before {
+      content: '';
+      transform: rotate(-45deg);
+      width: 150%;
+      height: 150%;
+      position: absolute;
+      top: -20%;
+      left: -23%;
+    }
   }
 }
