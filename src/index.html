@@ -8,7 +8,6 @@
   <title>Week 37 Challenge</title>
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
-  <link rel="stylesheet" href="css/owl.carousel.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -65,16 +64,21 @@
 
   <!-- BANNER -->
   <section class="banner">
-    <a href="#" class="btn banner__btn">Read more</a>
-    <img src="img/model.png" alt="Man on a skateboard" class="banner__img">
+    <div class="banner__container container">
+      <div class="banner__content">
+        <h2 class="banner__title">Think <span class="banner__title--block">outside</span> <span class="banner__title--small">of the box</span></h2>
+        <a href="#" class="btn banner__btn">Read more</a>
+      </div>
+      <img src="img/model.png" alt="Man on a skateboard" class="banner__img">
+    </div>
   </section>
 
   <!-- ABOUT -->
   <section id="about" class="about">
-    <div class="about__container">
+    <div class="about__container container">
       <div class="about__shape"></div>
       <div class="about__content">
-        <h2 class="about__title">Who we are</h2>
+        <h3 class="about__title">Who we are</h3>
         <p class="about__text">Sed ut perspiciatis unde omnis iste natutts error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
           eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
         <a href="" class="btn about__btn">Read more</a>
@@ -85,15 +89,15 @@
 
   <!-- SERVICES -->
   <section id="services" class="services">
-    <div class="services__container">
-      <h2 class="services__title">What we do</h2>
+    <div class="services__container container">
+      <h3 class="services__title">What we do</h3>
       <div class="services__box">
         <!-- Service item 1 -->
         <div class="services__item">
           <div class="services__icon">
             <img src="img/flag.png" alt="">
           </div>
-          <h3 class="services__subtitle">Creative Work</h3>
+          <h4 class="services__subtitle">Creative Work</h4>
           <p class="services__text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
         </div>
         <!-- Service item 2 -->
@@ -101,7 +105,7 @@
           <div class="services__icon">
             <img src="img/computer.png" alt="">
           </div>
-          <h3 class="services__subtitle">We do Best</h3>
+          <h4 class="services__subtitle">We do Best</h4>
           <p class="services__text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
         </div>
         <!-- Service item 3 -->
@@ -109,7 +113,7 @@
           <div class="services__icon">
             <img src="img/chart.png" alt="">
           </div>
-          <h3 class="services__subtitle">Best Company</h3>
+          <h4 class="services__subtitle">Best Company</h4>
           <p class="services__text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
         </div>
         <!-- Service item 4 -->
@@ -117,7 +121,7 @@
           <div class="services__icon">
             <img src="img/idea.png" alt="">
           </div>
-          <h3 class="services__subtitle">Nice Idea</h3>
+          <h4 class="services__subtitle">Nice Idea</h4>
           <p class="services__text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
         </div>
         <!-- Service item 5 -->
@@ -125,7 +129,7 @@
           <div class="services__icon">
             <img src="img/map.png" alt="">
           </div>
-          <h3 class="services__subtitle">Professional</h3>
+          <h4 class="services__subtitle">Professional</h4>
           <p class="services__text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
         </div>
         <!-- Service item 6 -->
@@ -133,7 +137,7 @@
           <div class="services__icon">
             <img src="img/mail.png" alt="">
           </div>
-          <h3 class="services__subtitle">Great Services</h3>
+          <h4 class="services__subtitle">Great Services</h4>
           <p class="services__text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
         </div>
       </div>
@@ -142,7 +146,7 @@
 
   <!-- PROCESS -->
   <section id="process" class="process">
-    <h2 class="process__title">How we work</h2>
+    <h3 class="process__title">How we work</h3>
     <div class="process__content">
       <p class="process__text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.Sed ut perspiciatis
         unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
@@ -154,7 +158,7 @@
         <div class="process__img"></div>
         <p class="process__number">1.</p>
         <div class="process__description">
-          <h3 class="process__subtitle">Idea</h3>
+          <h4 class="process__subtitle">Idea</h4>
           <p class="process__details">Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
         </div>
       </div>
@@ -163,7 +167,7 @@
         <div class="process__img"></div>
         <p class="process__number">2.</p>
         <div class="process__description">
-          <h3 class="process__subtitle">Design</h3>
+          <h4 class="process__subtitle">Design</h4>
           <p class="process__details">Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
         </div>
       </div>
@@ -172,7 +176,7 @@
         <div class="process__img"></div>
         <p class="process__number">3.</p>
         <div class="process__description">
-          <h3 class="process__subtitle">Output</h3>
+          <h4 class="process__subtitle">Output</h4>
           <p class="process__details">Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
         </div>
       </div>
@@ -181,36 +185,36 @@
 
   <!-- TEAM -->
   <section id="team" class="team">
-    <h2 class="team__title">Our creative team</h2>
+    <h3 class="team__title">Our creative team</h3>
     <div class="team__carousel owl-carousel">
       <!-- Team item 1 -->
       <div class="team__item">
         <div class="team__img team__img--one"></div>
-        <div class="team__name">Jimmy Doe</div>
-        <div class="team__position">Web Developer</div>
+        <div class="team__para team__para--name"><p class="team__name">Jimmy Doe</p></div>
+        <div class="team__para team__para--position"><p class="team__position">Web Developer</p></div>
       </div>
       <div class="team__item">
         <div class="team__img team__img--two"></div>
-        <div class="team__name">Jimmy Doe</div>
-        <div class="team__position">Web Developer</div>
+        <div class="team__para team__para--name"><p class="team__name">Jimmy Doe</p></div>
+        <div class="team__para team__para--position"><p class="team__position">Web Developer</p></div>
       </div>
       <div class="team__item">
         <div class="team__img team__img--three"></div>
-        <div class="team__name">Jimmy Doe</div>
-        <div class="team__position">Web Developer</div>
+        <div class="team__para team__para--name"><p class="team__name">Jimmy Doe</p></div>
+        <div class="team__para team__para--position"><p class="team__position">Web Developer</p></div>
       </div>
       <div class="team__item">
         <div class="team__img team__img--four"></div>
-        <div class="team__name">Jimmy Doe</div>
-        <div class="team__position">Web Developer</div>
+        <div class="team__para team__para--name"><p class="team__name">Jimmy Doe</p></div>
+        <div class="team__para team__para--position"><p class="team__position">Web Developer</p></div>
       </div>
     </div>
   </section>
 
   <!-- CLIENTS -->
   <section class="clients" id="clients">
-    <h2 class="clients__title">What clients says</h2>
-    <div class="clients__container">
+    <h3 class="clients__title">What clients says</h3>
+    <div class="clients__container container">
       <div class="clients__img active"></div>
       <!--<div class="clients__frame active">
       <img src="img/team-3.jpg" alt="">
@@ -234,8 +238,8 @@
 
   <!-- CONTACT -->
   <section id="contact" class="contact">
-    <h2 class="contact__title contact__title--secondary">Get in touch</h2>
-    <div class="contact__container">
+    <h3 class="contact__title contact__title--secondary">Get in touch</h3>
+    <div class="contact__container container">
       <!-- Contact item 1 -->
       <div class="contact__item">
         <img src="img/mail.png" alt="">
@@ -301,8 +305,7 @@
   </section>
 
   <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-  <script src="js/jquery-3.3.1.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 

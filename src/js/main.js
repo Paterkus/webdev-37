@@ -1,24 +1,9 @@
-$(document).ready(function() {
-  $('.owl-carousel').owlCarousel({
-    center: true,
-    loop: true,
-    dots: false,
-    autoplay: true,
-    autoplayTimeout: 5000,
-    navText: false,
-    responsive: {
-      0:{
-        items: 1,
-        nav: true
-      },
-      600:{
-        items: 2,
-        nav: true
-      },
-      800:{
-        items: 3,
-        nav: true
-      }
+$(function() {
+  $(document).scroll(function() {
+    if($(this).scrollTop() > 50) {
+      $('.page-header').css('background-color', 'rgba(188, 46, 58, 1)')
+    } else {
+      $('.page-header').css('background-color', 'rgba(188, 46, 58, 0)')
     }
   });
 });
