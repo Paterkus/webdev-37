@@ -337,15 +337,80 @@ a {
 
   &__title {
     padding: 40px 0;
+  }  
+
+  &__carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 0;
+    overflow: hidden;
+  }
+
+  &__arrow {
+    cursor: pointer;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    z-index: 3;
+
+    &--left {
+      left: 1rem;
+      border-width: 35px 35px 35px 0;
+      border-color: transparent $gray transparent transparent;
+    }
+
+    &--right {
+      right: 1rem;
+      border-width: 35px 0 35px 35px;
+      border-color: transparent transparent transparent $gray;
+    }
+  }
+
+  &__item {
+    opacity: .7;
+
+    &--center {
+      order: 2;
+      opacity: 1;
+      z-index: 2;
+    }
+
+    &--left {
+      order: 1;
+    }
+
+    &--right {
+      order: 3;
+    }
+
+    &--left, &--right {
+      margin-bottom: 2rem;
+      transform: scale(.6);
+      & .team__para--pos {
+        display: none;
+      }
+    }
+
+    &--hidden {
+      display: none;
+    }
+  }
+
+  &__item-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   &__img {
     background-color: #fff;
     transform: rotate(45deg);
-    width: 150px;
-    height: 150px;
+    width: 300px;
+    height: 300px;
     overflow: hidden;
-    border: 15px solid #fff;
+    border: 10px solid #fff;
     box-shadow: $shadow;
 
     &--one::before {
@@ -361,17 +426,17 @@ a {
     }
 
     &--four::before {
-      background: url('../img/team-4.jpg') no-repeat;
+      background: url('../img/team-4.jpg') no-repeat; 
     }
 
     &::before {
       content: '';
-      background-size: cover;
-      background-position: center;
       transform: rotate(-45deg);
       width: 150%;
       height: 150%;
       position: absolute;
+      background-size: cover;
+      background-position: center;
       top: -20%;
       left: -23%;
     }
@@ -379,10 +444,12 @@ a {
 
   &__para {
     background: $shape;
-    width: 150px;
+    width: 180px;
+    height: 35px;
     transform: skew(40deg);
     display: flex;
     justify-content: center;
+    align-items: center;
   }
 
   &__name, &__position {
@@ -390,10 +457,17 @@ a {
     transform: skew(-40deg);
   }
 
-  &__para--position {
+  &__para--pos {
     background: $red;
-    width: 80px;
-    font-size: .6rem;
+    width: 100px;
+    height: 25px;
+    font-size: .8rem;
+    font-style: italic;
+    margin-top: -4px;
+  }
+
+  &__para--name {
+    font-weight: 700;
   }
 }
 
@@ -410,19 +484,46 @@ a {
     overflow: hidden;
     border: 15px solid #fff;
     box-shadow: $shadow;
+    margin: 50px auto 80px auto;
+
+    &--one::before {
+      background: url('../img/team-2.jpg') no-repeat;
+    }
+
+    &--two::before {
+      background: url('../img/team-3.jpg') no-repeat;
+    }
+
+    &--three::before {
+      background: url('../img/team-4.jpg') no-repeat;
+    }
 
     &::before {
       content: '';
-      background: url('../img/team-2.jpg') no-repeat;
-      background-size: cover;
-      background-position: center;
       transform: rotate(-45deg);
       width: 150%;
       height: 150%;
       position: absolute;
       top: -20%;
       left: -23%;
+      background-size: cover;
+      background-position: center;
     }
+  }
+
+  &__icon {
+    float: left;
+    color: $gray;
+    font-size: 3rem;
+    margin-right: 5%;
+  }
+
+  &__text {
+    font-style: italic;
+  }
+
+  &__author {
+    font-weight: 700;
   }
 
   &__thumbnails {
@@ -465,5 +566,16 @@ a {
       top: -20%;
       left: -23%;
     }
+  }
+}
+
+.contact {
+  background: url('../img/footer.jpg');
+  background-size: cover;
+  background-position: center;
+
+  &__title {
+    color: #9f9f9f;
+    padding: 50px 0;
   }
 }

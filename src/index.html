@@ -66,7 +66,10 @@
   <section class="banner">
     <div class="banner__container container">
       <div class="banner__content">
-        <h2 class="banner__title">Think <span class="banner__title--block">outside</span> <span class="banner__title--small">of the box</span></h2>
+        <h2 class="banner__title">Think
+          <span class="banner__title--block">outside</span>
+          <span class="banner__title--small">of the box</span>
+        </h2>
         <a href="#" class="btn banner__btn">Read more</a>
       </div>
       <img src="img/model.png" alt="Man on a skateboard" class="banner__img">
@@ -185,28 +188,56 @@
 
   <!-- TEAM -->
   <section id="team" class="team">
-    <h3 class="team__title">Our creative team</h3>
-    <div class="team__carousel owl-carousel">
-      <!-- Team item 1 -->
-      <div class="team__item">
-        <div class="team__img team__img--one"></div>
-        <div class="team__para team__para--name"><p class="team__name">Jimmy Doe</p></div>
-        <div class="team__para team__para--position"><p class="team__position">Web Developer</p></div>
-      </div>
-      <div class="team__item">
-        <div class="team__img team__img--two"></div>
-        <div class="team__para team__para--name"><p class="team__name">Jimmy Doe</p></div>
-        <div class="team__para team__para--position"><p class="team__position">Web Developer</p></div>
-      </div>
-      <div class="team__item">
-        <div class="team__img team__img--three"></div>
-        <div class="team__para team__para--name"><p class="team__name">Jimmy Doe</p></div>
-        <div class="team__para team__para--position"><p class="team__position">Web Developer</p></div>
-      </div>
-      <div class="team__item">
-        <div class="team__img team__img--four"></div>
-        <div class="team__para team__para--name"><p class="team__name">Jimmy Doe</p></div>
-        <div class="team__para team__para--position"><p class="team__position">Web Developer</p></div>
+    <div class="team__container container">
+      <h3 class="team__title">Our creative team</h3>
+      <div class="team__carousel">
+        <div class="team__arrow team__arrow--left"></div>
+        <!-- Team item 1 -->
+        <div class="team__item team__item--center">
+          <div class="team__item-content">
+            <div class="team__img team__img--one"></div>
+            <div class="team__para team__para--name">
+              <p class="team__name">John Doe</p>
+            </div>
+            <div class="team__para team__para--pos">
+              <p class="team__position">Developer</p>
+            </div>
+          </div>
+        </div>
+        <div class="team__item team__item--left">
+          <div class="team__item-content">
+            <div class="team__img team__img--two"></div>
+            <div class="team__para team__para--name">
+              <p class="team__name">Jimmy Doe</p>
+            </div>
+            <div class="team__para team__para--pos">
+              <p class="team__position">Tester</p>
+            </div>
+          </div>
+        </div>
+        <div class="team__item team__item--right">
+          <div class="team__item-content">
+            <div class="team__img team__img--three"></div>
+            <div class="team__para team__para--name">
+              <p class="team__name">Frank Doe</p>
+            </div>
+            <div class="team__para team__para--pos">
+              <p class="team__position">Manager</p>
+            </div>
+          </div>
+        </div>
+        <div class="team__item team__item--hidden">
+          <div class="team__item-content">
+            <div class="team__img team__img--four"></div>
+            <div class="team__para team__para--name">
+              <p class="team__name">Kate Doe</p>
+            </div>
+            <div class="team__para team__para--pos">
+              <p class="team__position">Designer</p>
+            </div>
+          </div>
+        </div>
+        <div class="team__arrow team__arrow--right"></div>
       </div>
     </div>
   </section>
@@ -215,21 +246,41 @@
   <section class="clients" id="clients">
     <h3 class="clients__title">What clients says</h3>
     <div class="clients__container container">
-      <div class="clients__img active"></div>
-      <!--<div class="clients__frame active">
-      <img src="img/team-3.jpg" alt="">
+      <!-- Clients item 1 -->
+      <div class="clients__item clients__item--active">
+        <div class="clients__img clients__img--one"></div>
+        <div class="clients__content">
+          <i class="clients__icon fas fa-quote-left"></i>
+          <p class="clients__text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.Sed ut perspiciatis
+            unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+          <br>
+          <p class="clients__author">Jinny Snow, Company CEO</p>
+        </div>
       </div>
-      <div class="clients__frame active">
-        <img src="img/team-4.jpg" alt="">
-      </div>-->
-      <div class="clients__content">
-        <i class="fas fa-quote-left"></i>
-        <p class="clients__text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.Sed ut perspiciatis
-          unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
-        <p class="clients__author">Jinny Snow, Company CEO</p>
+      <!-- Clients item 2 -->
+      <div class="clients__item">
+        <div class="clients__img clients__img--two"></div>
+        <div class="clients__content">
+          <i class="clients__icon fas fa-quote-left"></i>
+          <p class="clients__text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.Sed ut perspiciatis
+            unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+          <br>
+          <p class="clients__author">John Doe, Company CTO</p>
+        </div>
+      </div>
+      <!-- Clients item 3 -->
+      <div class="clients__item">
+        <div class="clients__img clients__img--three"></div>
+        <div class="clients__content">
+          <i class="clients__icon fas fa-quote-left"></i>
+          <p class="clients__text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.Sed ut perspiciatis
+            unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+          <br>
+          <p class="clients__author">Jennifer Rain, Company OCE</p>
+        </div>
       </div>
       <div class="clients__thumbnails">
-        <div class="clients__thumbnail"></div>
+        <div class="clients__thumbnail clients__thumbnail--active"></div>
         <div class="clients__thumbnail"></div>
         <div class="clients__thumbnail"></div>
       </div>
@@ -238,7 +289,7 @@
 
   <!-- CONTACT -->
   <section id="contact" class="contact">
-    <h3 class="contact__title contact__title--secondary">Get in touch</h3>
+    <h3 class="contact__title contact__title">Get in touch</h3>
     <div class="contact__container container">
       <!-- Contact item 1 -->
       <div class="contact__item">
